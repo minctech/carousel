@@ -16,7 +16,7 @@ for (let i = 1; i < 101; i++) {
     location: faker.address.city(),
     price: faker.commerce.price(),
     reviewCount: faker.random.number(),
-    image: String,
+    image: `https://console.aws.amazon.com/s3/object/listingcarousel/media/${i}.jpg?region=us-east-2&tab=overview`,
     listingType: faker.lorem.word(),
     description: faker.lorem.sentence()
   })

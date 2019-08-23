@@ -21,7 +21,3 @@ const listing = mongoose.model('Listing', listingSchema);
 
 module.exports = listing
 
-
-// var newcarousel = new mongoose.Schema({
-//   name: String
-// })
