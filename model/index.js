@@ -11,13 +11,15 @@ let listingSchema = new mongoose.Schema({
   name: String,
   location: String,
   price: Number,
-  id: Number,
   reviewCount: Number,
   image: String,
-  listingType: String
+  listingType: String,
+  id: Number
 })
 
-let Listing = mongoose.model('Listing', listingSchema);
+const listing = mongoose.model('Listing', listingSchema);
+
+module.exports = listing
 
 
 // var newcarousel = new mongoose.Schema({
