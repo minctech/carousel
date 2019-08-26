@@ -17,7 +17,19 @@ let listingSchema = new mongoose.Schema({
   id: Number
 })
 
+
 const listing = mongoose.model('Listing', listingSchema);
 
-module.exports = listing
+const getAll = function(callback){
+  listing.find({}).exec((err, data) => {
+    if(err){
+      callback(err)
+    } else {
+      callback(null, data)
+    }
+  })
+}
+
+
+module.exports = {listing, getAll}
 
