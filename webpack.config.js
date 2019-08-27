@@ -1,3 +1,7 @@
+var path = require('path');
+var SRC_DIR = path.join(__dirname, '/client/src');
+var DIST_DIR = path.join(__dirname, '/client/dist');
+
 module.exports = {
     entry: __dirname + '/client/src/index.jsx',
     module: {
@@ -8,15 +12,14 @@ module.exports = {
           use: {
             loader: 'babel-loader',
             options: {
-                presets: ['@babel/preset-react', '@babel/preset-env']
+                'presets': ['@babel/preset-react', '@babel/preset-env']
               }
- 
           }
         }
       ]
     },
     output: {
         filename: 'bundle.js',
-        path: __dirname + '/client/dist'
-      }
-  };
+        path: DIST_DIR
+    }
+};
