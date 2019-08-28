@@ -17,7 +17,6 @@ let listingSchema = new mongoose.Schema({
   id: Number
 })
 
-
 const listing = mongoose.model('Listing', listingSchema);
 
 const getAll = function(callback){
@@ -30,6 +29,5 @@ const getAll = function(callback){
   })
 }
 
-
-module.exports = {listing, getAll}
+module.exports = {listing}
 
