@@ -19,7 +19,9 @@
     "express": "^4.17.1",
     "faker": "^4.1.0",
     "mongoose": "^5.6.10",
-    "mongoose-auto-increment": "^5.0.1"
+    "mongoose-auto-increment": "^5.0.1",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
     "@babel/core": "^7.5.5",
