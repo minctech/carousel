@@ -7,7 +7,9 @@ mongoose.connect('mongodb://localhost/carousel');
 var faker = require('faker');
 
 let randomData = [];
+
 // let typeList = ['ENTIRE APARTMENT', 'ENTIRE LOFT', 'PRIVATE ROOM', 'ENTIRE FLOOR', 'VERIFIED - ENTIRE APARTMENT', 'ENTIRE HOUSE', 'ENTIRE SERVICED APARTMENT'];
+
 
 for (let i = 1; i < 101; i++) {
   let listingItem = new listing({
